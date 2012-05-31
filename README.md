@@ -6,7 +6,7 @@ Hidden Code allows you to activate an hidden code on your website (ex: the konam
 
 ##Examples
 
-You can see some examples on the [examples](tree/master/examples) folder.
+You can see some examples on the [examples](/tree/master/examples) folder.
 
 ##Basic use
 
@@ -15,7 +15,7 @@ You can see some examples on the [examples](tree/master/examples) folder.
             alert('You found the hidden Code !');
         }
     });
-    
+
 ###
 
 If you have some problems or improvements with it, contact me.
