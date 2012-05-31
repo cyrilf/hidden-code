@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+   		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Hidden Code</title>
+		<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<link href="prettify.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="prettify.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				prettyPrint();
+			});
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				$("#displayHiddenCode").click(function(e){
+					e.preventDefault();
+					$("#hiddenCode").toggle();
+				});
+			});
+		</script>
+
+		<!--Following scripts are needed for "hidden code" to work-->
+		<script src="../jquery.hiddenCode.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var str = '<h1>You found my hidden code !</h1>\
+											<p>Well Done !</p>\
+											<p>You can use this callback function to do whatever you want !</p>\
+											<p><a class="btn btn-primary btn-large" href=".">Show me this example again</a></p>';
+			$(window).hiddenCode({
+				password: 'BACON',
+				callback: function() {
+					$(".hero-unit").html(str);
+				}
+			});
+		</script>
+	</head>
+	<body>	
+		<div class="container">
+			<div class="hero-unit">
+			    <h1>Hidden Code</h1>
+			    <br />
+			    <p>
+			    	(if you don't know the code for this page click on the button)
+			    </p>
+			    <p><a id="displayHiddenCode" class="btn btn-primary btn-large" href="#">Display Code</a></p>
+			    <p style="display:none;" id="hiddenCode"><code>"bacon"</code></p>
+			    <br /><br /><br />
+	    		<pre class="prettyprint">
+var str = '&lt;h1&gt;You found my hidden code !&lt;/h1&gt;\
+		&lt;p&gt;Well Done !&lt;/p&gt;\
+		&lt;p&gt;You can use this callback function to do whatever you want !&lt;/p&gt;\
+		&lt;p&gt;&lt;a class="btn btn-primary btn-large" href="."&gt;Show me this example again&lt;/a&gt;&lt;/p&gt;';
+$(window).hiddenCode({
+	password: 'BACON',
+	callback: function() {
+		$(".hero-unit").html(str);
+	}
+});
+				</pre>
+			</div>
+		</div>
+	</body>
+</html>
