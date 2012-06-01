@@ -19,6 +19,22 @@
         }
       });
     </script>
+    <style type="text/css">
+        #project_title {
+            float : left;
+        }
+
+        #by_author {
+          display: inline-block;
+          margin-top : 28px;
+          margin-left : 8px;
+        }
+
+        #project_tagline {
+          clear: both;
+        }
+    </style>
+
   </head>
 
   <body>
@@ -29,6 +45,7 @@
           <a id="forkme_banner" href="https://github.com/cyrilf7/hidden-code">View on GitHub</a>
 
           <h1 id="project_title">Hidden-code</h1>
+          <a href="http://cyrilf.com" id="by_author">by Cyril F</a>
           <h2 id="project_tagline">Hidden Code allow you to activate an hidden code on your website</h2>
 
             <section id="downloads">
@@ -49,7 +66,7 @@
 
 <h2>Examples</h2>
 
-<p>You can see some examples on the <a href="examples/index.html">examples</a> folder.</p>
+<p>You can see some examples here : <a href="examples/index.html">examples</a></p>
 
 <h2>Basic use</h2>
 
@@ -60,9 +77,24 @@
 });
 </code></pre>
 
-<p>If you have some problems or improvements with it, contact me.</p>
+<h2>Advanced use</h2>
 
-<p><a href="http://cyrilf.com">Cyril F</a></p>
+<pre><code>$(window).hiddenCode({
+    //You can type a password like this one:
+    //   password: 'bacon'
+    //Or the following one (with key code) :
+    
+    password: [66,65,67,79,78],
+    callback: function() {
+       $("#project_title").html("Nice job you found my hidden code !");
+    }
+});
+</code></pre>
+
+<br />
+<p>If you have some problems or improvements with it, contact me.</p>
+<br />
+<p><h2><a href="http://cyrilf.com">Cyril F - Web, Software &amp; Mobile developer</a></h2></p>
       </section>
     </div>
 
