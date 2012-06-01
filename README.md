@@ -16,7 +16,7 @@ You can see some examples [here](http://cyrilf7.github.com/hidden-code/examples/
         }
     });
 
-###Advanced use
+##Advanced use
 
     $(window).hiddenCode({
         //You can type a password like this one:
