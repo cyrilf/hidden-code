@@ -2,11 +2,11 @@
 
 It's a jQuery plugin.
 
-Hidden Code allows you to activate an hidden code on your website (ex: the konami one)
+Hidden Code allows you to activate an hidden code on your website (e.g. the konami code)
 
 ##Examples
 
-You can see some examples [here](http://cyrilf7.github.com/hidden-code/examples/index.html).
+Here is some [live examples](http://cyrilf.github.com/hidden-code/examples/index.html).
 
 ##Basic use
 
